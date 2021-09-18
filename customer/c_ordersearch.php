@@ -32,12 +32,12 @@
         <nav>
           <a href="c_dashboard.php" >Home </a>
           <a href="c_orders.php">Orders</a>
-          <a href="C:/xampp/htdocs/final/logout.php" >Logout</a>
+          <a href="../logout.php" >Logout</a>
         </nav>
     </header>   
 <div>     
 <?php
-require_once "C:/xampp/htdocs/final/config.php";
+require_once "../config.php";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $str=$_POST["search"];
     $sql='select item_id,s_id,qty from available where type=?';

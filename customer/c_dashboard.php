@@ -12,7 +12,7 @@
         <nav>
           <button><a href="#" >Home</a></button>
           <button><a href="c_orders.php">Orders</a></button>
-          <button><a href="logout.php">Logout</a></button>
+          <button><a href="../logout.php">Logout</a></button>
         </nav>
     </header>
 
