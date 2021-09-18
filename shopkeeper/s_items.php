@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="s_dashboard.css">
-    <link rel="stylesheet" href="C:/xampp/htdocs/final/customer/c_orders.css">
+    <link rel="stylesheet" href="../customer/c_orders.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,11 @@
           <button class="a"><a href="s_orders.php">Orders</a></button> 
           <button class="a"><a href="s_listitem.php">ITEMS</a></button>
           <button class="a"><a href="s_additem.html">Add New Items</a></button>
-          <button class="a"><a href="C:/xampp/htdocs/final/logout.php" >Logout</a></button> 
+          <button class="a"><a href="../logout.php" >Logout</a></button> 
         </nav>
     </header>    
 <?php
-require_once "config.php";
+require_once "../config.php";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $str=$_POST["search"];
     $sql='select item_id,s_id,qty from available where type=? and s_id=?';
